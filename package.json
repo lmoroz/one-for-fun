@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/lmoroz/portfolio/issues"
   },
-  "homepage": "https://github.com/lmoroz/portfolio#readme"
+  "homepage": "https://github.com/lmoroz/portfolio#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
 }

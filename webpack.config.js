@@ -31,6 +31,10 @@ module.exports = (env, argv) => {
       from: './src/favicon.ico',
       to:   './favicon.ico',
     },
+    {
+      from: './src/assets/fonts',
+      to:   './assets/fonts',
+    },
   ];
 
   return {
@@ -60,6 +64,15 @@ module.exports = (env, argv) => {
     ],
     module:    {
       rules: [
+        {
+          test:    /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+          loader:  'file-loader',
+          options: {
+            assetsPublicPath: '',
+            outputPath:       './assets/fonts/',
+            name:             '[name].[ext]'
+          }
+        },
         {
           test:    /\.(png|jpe?g|gif|svg)$/,
           loader:  'file-loader',

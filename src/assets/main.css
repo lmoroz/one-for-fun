@@ -1,0 +1,140 @@
+main {
+    background-color: #FFF;
+    display: flex;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0;
+    padding-top: 2em;
+}
+
+.main-info {
+    flex: 2 1 65%;
+}
+
+.main-info a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--blue-color);
+    text-shadow: 0 0 1px rgba(33,33,33,0.1);
+}
+.main-info a:active,
+.main-info a:hover {
+    border-bottom: 1px dashed var(--blue-color);
+}
+
+
+
+.additional-info {
+    flex: 1 1 25%;
+    margin-right: 3em;
+}
+
+.portfolio-header,
+.education-header,
+.sertificates-header {
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 7px 12px;
+}
+.portfolio-header h2,
+.education-header h2,
+.sertificates-header h2 {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+
+
+
+.education-places,
+.sertificates-list {
+    padding: 16px 48px 32px 12px;
+}
+
+.education-date {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.education-descr {
+    font-size: 0.9em;
+}
+
+.education-places {
+    display: grid;
+    grid-template: repeat(4, 1fr 2fr) / 1fr;
+    grid-gap: 0.1em;
+
+}
+
+.education-header {
+    background-color: var(--green-color);
+    color: var(--text-color);
+}
+.education-header:hover {
+
+}
+
+
+.portfolio-header {
+    background-color: var(--orange-color);
+}
+
+.projects-slider {
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+
+
+.sertificates-header {
+    background-color: var(--blue-color);
+}
+
+.sertificates-list {
+    list-style: inside;
+}
+.sertificates-list > li {
+    margin-bottom: 14px;
+}
+
+
+footer {
+    color: var(--text-color);
+    background-color: var(--pink-color);
+    margin-bottom: 3em;
+    padding: .5em;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+}
+
+footer:before {
+    background-color: var(--dark-color);
+    transform: skew(0deg, 3deg);
+    box-shadow: 5px 5px 5px var(--dark-color);
+    position: absolute;
+    bottom: -2px;
+    content: '';
+    z-index: -6;
+    width: 50%;
+    height: 100%;
+    opacity: 0.5;
+    right: 7px;
+}
+
+footer:after {
+    background-color: var(--dark-color);
+    transform: skew(0deg, -3deg);
+    box-shadow: -5px 5px 5px var(--dark-color);
+    position: absolute;
+    bottom: -2px;
+    content: '';
+    z-index: -5;
+    width: 50%;
+    height: 100%;
+    opacity: 0.5;
+    left: 7px;
+}

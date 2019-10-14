@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" media="only screen and (max-width: 640px)"  href="demo-mobile.html">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TheYalow</title>
+  <style>
+    body {
+      min-width: 1300px!important;
+    }
+    .iframe-container {
+      padding-top: 65%;
+      position: relative;
+      height:  1560px;
+    }
+
+    .iframe-container iframe {
+      border: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 1440px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      color: #ffffff;
+      background-color: #ec9e03;
+      border: 2px solid #ec9e03;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      transition: all 0.1s ease;
+      will-change: background-color, color;
+    }
+    .button:hover {
+      color: #ec9e03;
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body class="iframe-container ">
+<iframe src="index.html" width="1440" height="100%" frameborder="no"></iframe>
+<a href="demo-mobile.html" class="button">Перейти на мобильную версию</a>
+</body>
+</html>

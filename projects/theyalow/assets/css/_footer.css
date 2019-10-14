@@ -1,0 +1,43 @@
+@media screen and (min-width: 641px) {
+    .footer {
+        height: 64px;
+    }
+
+    .footer__logo {
+        width: 54px;
+        height: 54px;
+        margin: 1px 6px auto 0;
+    }
+    .footer__copyright {
+        font-size: var(--footer-font-size);
+        line-height: var(--footer-font-size);
+        height: var(--footer-font-size);
+        margin: auto 0 11px 0;
+        letter-spacing: .35px;
+    }
+
+}
+
+.footer {
+    background: #4C4C4C;
+    box-shadow: -15px 0 #fff, 15px 0 #fff, 0 -2px 7px -2px #000, 0 -2px 7px -2px rgba(0, 0, 0, 0.4);
+
+}
+
+
+.footer-wrapper {
+    display: flex;
+    height: 100%;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+
+.footer__copyright {
+    font-family: "Lucida Sans", Arial, sans-serif;
+    font-style: italic;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1.732px rgba(0, 0, 0, 0.42);
+}
+

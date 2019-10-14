@@ -1,0 +1,176 @@
+video {
+    object-fit: fill;
+}
+
+.slider-item__video,
+.slider-item__video .player,
+.slider-item__video .controls-overlay {
+    width: 549px;
+    height: 327px;
+}
+
+
+.slider-item__video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -9px;
+    margin-right: 50px;
+    position: relative;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.slider-item__video .controls-overlay {
+    cursor: pointer;
+    width: 549px;
+    height: 327px;
+    background-color: rgba(245, 197, 6, .11);
+    margin-top: -327px;
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.controls-overlay::before {
+    cursor: pointer;
+    display: block;
+    content: '';
+    border-radius: 50%;
+    background: rgba(245, 197, 6, .72) url("../images/play.svg") no-repeat;
+    background-position: 26px 16px;
+    width: 68px;
+    height: 68px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: background-color ease 0.1s, transform ease 0.2s, opacity ease 0.2s;
+}
+
+.controls-overlay:hover::before {
+    top: 50%;
+    left: 50%;
+    background-color: rgba(245, 197, 6, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play .controls-overlay::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+}
+
+
+.activecontrols {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    transform: translateY(100%);
+    transition: transform ease 0.2s;
+}
+
+.play .controls-overlay .activecontrols {
+    transform: translateY(0);
+}
+
+
+.controls-overlay .track,
+.controls-overlay .play-button,
+.controls-overlay .soundonoff-button {
+    transition: opacity ease 0.2s;
+    opacity: 0;
+    position: absolute;
+}
+
+.track {
+    bottom: 29px;
+    margin-left: 80px;
+    background-color: rgba(245, 197, 6, 0.28);
+    border-radius: 6px;
+    width: 405px;
+    height: 12px;
+}
+
+.progress {
+    background-color: rgba(245, 197, 6, 1);
+    border-radius: 6px 0 0 6px;
+    width: 44%;
+    height: 12px;
+}
+
+.play-button {
+    background-image: url("../images/play-pause.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(245, 197, 6, .37);
+    color: #ffffff;
+    bottom: 22px;
+    left: 29px;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+    transition: background-color ease 2s;
+}
+
+.play-button:hover {
+    background-color: rgba(245, 197, 6, 0.8);
+}
+
+.soundonoff-button {
+    background: url("../images/sound-on.png") center no-repeat;
+    bottom: 22px;
+    right: 14px;
+    width: 27px;
+    height: 26px;
+}
+
+.slider-item__video.soundoff .soundonoff-button {
+    background: url("../images/sound-of.png") center no-repeat;
+}
+
+.soundonoff-button:hover, .slider-item__video.soundoff .soundonoff-button:hover {
+    background-color: rgba(245, 197, 6, .37);
+}
+
+
+.play .controls-overlay .track,
+.play .controls-overlay .play-button,
+.play .controls-overlay .soundonoff-button {
+    opacity: 1;
+}
+
+
+
+
+
+.news-item-video,
+.news-item-video .news-item-video-player,
+.news-item-video .controls-overlay {
+    height: 233px;
+    width: 315px;
+}
+
+
+.news-item-video .controls-overlay {
+    cursor: pointer;
+    height: 233px;
+    width: 315px;
+    background-color: rgba(245, 197, 6, .11);
+    margin-top: -230px;
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.news-item-video .controls-overlay::before {
+    background-position: 24px 12px;
+    width: 61px;
+    height: 61px;
+    margin-left: 2px;
+}
+

@@ -1,0 +1,128 @@
+
+.news-area {
+    height: 508px;
+    background: center no-repeat url("../images/news_area_bg2.png"), center url("../images/news_area_bg.png");
+}
+
+.news-area .news-area__news-header {
+    text-transform: uppercase;
+    font-size: 37px;
+    letter-spacing: 0.43px;
+    color: #ffffff;
+    font-family: "PT Sans", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
+    font-weight: 400;
+    padding-top: 32px;
+}
+
+.news-area__news-cards {
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: 'text video twitter';
+}
+.news-area__news-cards>* {
+    position: relative;
+    height: 233px;
+    width: 315px;
+    background-color: #ec9e03;
+    color: #ffffff;
+}
+.news-area__news-cards_card-text {
+    grid-area: text;
+    box-sizing: border-box;
+    font-family: "Segoe WP Light", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
+    font-size: 29px;
+    line-height: 38px;
+    letter-spacing: 0.012em;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 100;
+    padding: 16px 34px 34px 30px;
+    width: 341px;
+}
+.news-area__news-cards_card-video {
+    grid-area: video;
+    background-color: transparent;
+    margin-right: 34px;
+}
+.news-area__news-cards_card-video .news-item-video {
+    height: 233px;
+    width: 315px;
+}
+.news-area__news-cards_card-tweet {
+    grid-area: twitter;
+    background: #ec9e03 center 58px no-repeat url("../images/twitter.svg");
+    width: 329px;
+}
+.news-area__news-cards-date {
+    width: 113px;
+    height: 86px;
+    padding: 13px 0 9px 0;
+    background-color: #ddb101;
+    font-family: "Segoe UI", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.news-area__news-cards-date .day {
+    font-size: 50px;
+    letter-spacing: 0.41pt;
+    line-height: 38px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.news-area__news-cards-date .month {
+    font-size: 20.7px;
+    line-height: 38px;
+    color: #b26529;
+    letter-spacing: 0.11pt;
+    margin-left: 2px;
+}
+.news-area__news-cards-handler {
+}
+.news-area__news-cards_card-text::after,
+.news-area__news-cards_card-tweet::after {
+    content: '+';
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
+    font-size: 21px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    font-family: "PT Sans", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
+    cursor: pointer;
+    line-height: 21px;
+    transition: color ease 0.2s,  background-color ease 0.2s;
+}
+.news-area__news-cards_card-tweet::after {
+    bottom: 8px;
+    right: 5px;
+}
+.news-area__news-cards_card-tweet .news-area__news-cards_card-tweet-counter {
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 27px;
+    font-family: "Segoe WP Light", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
+    font-size: 20pt;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 300;
+    width: 18px;
+    height: 24px;
+}
+
+.news-area__news-cards_card-text:hover::after,
+.news-area__news-cards_card-tweet:hover::after {
+    color: #ec9e03;
+    background-color: #ffffffdd;
+}
+
+@media screen and (min-width: 641px) {
+    .news-area__news-cards_card-tweet .tweets {
+        display: none;
+    }
+}
+

@@ -1,0 +1,17 @@
+@import url(./fonts.css);
+
+@import url(./_init.css);
+@import url(./_header.css);
+@import url(./_slider.css);
+@import url(./_icons.css);
+@import url(./_news.css);
+@import url(./_demo.css);
+@import url(./_footer.css);
+
+@import url(./player.css);
+@import url(./range.css);
+
+@import url(./mobile.css);
+
+
+

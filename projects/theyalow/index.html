@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>TheYalow</title>
+</head>
+<body>
+<header class="header">
+  <div class="header-wrapper">
+    <div class="title-wrapper">
+      <img class="header__logo" src="assets/images/logo.svg" alt="">
+      <h1 class="header__title">TheYalow</h1>
+    </div>
+    <div class="header__navbar-wrapper">
+      <ul class="header__navbar">
+        <li class="header__navbar__icon-about-us">
+          <a href="#about-us">
+            <span class="icon"></span>
+            About Us
+          </a>
+        </li>
+        <li class="header__navbar__icon-services">
+          <a href="#services">
+            <span class="icon"></span>
+            Services</a></li>
+        <li class="header__navbar__icon-contacts">
+          <a href="#contacts">
+            <span class="icon"></span>
+            Contact
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="slider-area">
+    <div class="slider-wrapper">
+      <div class="slider-item">
+        <div class="slider-item__video">
+          <video id="player" class="player"
+                 poster="assets/images/player-cover.png">
+            <source src="assets/fullmovie640x360.mp4" type='video/mp4'>
+            Video unavailable
+          </video>
+          <div class="controls-overlay">
+            <div class="activecontrols">
+              <div class="track">
+                <div class="progress"></div>
+              </div>
+              <div class="soundonoff-button"></div>
+              <div class="play-button"></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="slider-item__title">
+          <span class="slider-item__title__str-1">The cool</span>
+          <span class="slider-item__title__str-2">The minimal</span>
+        </h2>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <div class="slider-controls__left"></div>
+      <div class="slider-controls__right"></div>
+    </div>
+  </section>
+  <aside class="icon-area" id="services">
+    <ul class="icon-area-wrapper">
+      <li class="icon-wrapper icon-better-design">
+        <span class="icon"></span>
+        <span class="icon-text">Better Design</span></li>
+      <li class="icon-wrapper icon-customize">
+        <span class="icon"></span>
+        <span class="icon-text">Customise</span>
+      </li>
+      <li class="icon-wrapper icon-its-free">
+        <span class="icon"></span>
+        <span class="icon-text">Its free</span>
+      </li>
+    </ul>
+  </aside>
+  <section class="news-area" id="about-us">
+    <div class="news-area-wrapper">
+      <h2 class="news-area__news-header">Lorem ipsum dolor sit amet</h2>
+      <div class="news-area__news-cards">
+        <div class="news-area__news-cards news-area__news-cards_card-text">
+          Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor inci&shy;didunt ut
+        </div>
+        <div class="news-area__news-cards news-area__news-cards_card-video">
+          <div class="news-item-video">
+            <video id="news-item-video-player"
+                   class="news-item-video-player"
+                   poster="./assets/images/news-video-cover.png">
+              <source src="./assets/Jack-Johnson-Upside-Down-Official-Video-dqUdI4AIDF0-320.mp4"
+                      type='video/mp4'>
+              Video unavailable
+            </video>
+            <div class="controls-overlay">
+              <div class="activecontrols">
+                <div class="play-button"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-area__news-cards news-area__news-cards_card-tweet">
+          <span class="news-area__news-cards_card-tweet-counter">22</span>
+          <div class="tweets">
+            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 <div class="tweet-author">via @cssauthor</div></div>
+            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 <div class="tweet-author">via @cssauthor</div></div>
+            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 <div class="tweet-author">via @cssauthor</div></div>
+            <input type="text">
+            <button type="submit">Tweet</button>
+          </div>
+        </div>
+      </div>
+      <div class="news-area__news-cards-date">
+        <div class="day">25</div>
+        <div class="month">April</div>
+      </div>
+      <input type="range" value="35">
+    </div>
+  </section>
+  <section class="demo_area">
+    <div class="demo-area-wrapper">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <span class="demo-area-image"><img src="assets/images/demo-icon.png" alt="desktop, tab and mobile view"></span>
+      <ul class="demo-area__list">
+        <li>Sed ut perspiciatis unde omnis</li>
+        <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing</li>
+        <li>Sed ut perspiciatis unde omnis</li>
+        <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer" id="contacts">
+  <div class="footer-wrapper">
+    <img class="footer__logo" src="assets/images/logo.svg" alt="TheYalow Logo">
+    <span class="footer__copyright">TheYalow</span>
+  </div>
+</footer>
+
+<script type="text/javascript" src="player.js?18b315976a61b947dfa9"></script></body>
+</html>

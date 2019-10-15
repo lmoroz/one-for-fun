@@ -1,0 +1,131 @@
+
+header,
+footer,
+main {
+    min-width: 425px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+    header,
+    footer,
+    main {
+        max-width: 1024px;
+    }
+
+    .projects-slider-container {
+        width: 1024px;
+    }
+
+    .portfolio-header,
+    .education-header,
+    .sertificates-header,
+    footer {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .project-description {
+        width: 512px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 641px) {
+    header,
+    footer,
+    main {
+        width: 80vw;
+    }
+
+    .projects-slider-container {
+        width: 80vw;
+    }
+    .header-social__link {
+        font-size: 4vw;
+    }
+    .project-description {
+        width: 40vw;
+        padding: 1rem 1.2rem 1em 5.5rem;
+    }
+    .project-description__project-name {
+        padding: 1.2rem;
+    }
+    .project-description__project-props {
+        font-size: 0.8rem;
+        line-height: 1.7;
+        padding: 1.2rem;
+    }
+}
+@media screen and (max-width: 840px) {
+    .project-description {
+        padding: 1rem 1.1rem 1em 5.5rem;
+    }
+    .project-description__project-name {
+        padding: 1.1rem;
+    }
+    .project-description__project-props {
+        font-size: 0.7rem;
+        line-height: 1.7;
+        padding: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .project-description {
+        width: 80vw;
+        height: 100%;
+        padding: 2.5rem;
+        margin: auto;
+    }
+    .project-description__project-name {
+        padding: 1.1rem;
+    }
+    .project-description__project-props {
+        font-size: 0.7rem;
+        padding: 1.1rem;
+    }
+    .glide__arrows {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header,
+    footer,
+    main {
+        width: 100vw;
+        max-width: 640px;
+    }
+
+    .header-main>* {
+        margin: .1em 0.5em;
+    }
+    .header-photo {
+        border-radius: 100%;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border: 8px solid var(--text-color);
+    }
+    .header-name {
+        font-size: 1.5rem;
+    }
+    .header-social {
+        padding: .5rem;
+    }
+    .header-social__link {
+        font-size: 5vw;
+    }
+
+    .education-places,
+    .sertificates-list {
+        padding: 20px 48px 50px 50px;
+    }
+
+    .projects-slider-container {
+        width: 99vw;
+        padding: 0 0.5vw;
+    }
+}
+
+
+

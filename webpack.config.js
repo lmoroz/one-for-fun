@@ -31,10 +31,6 @@ module.exports = (env, argv) => {
       from: './src/favicon.ico',
       to:   './favicon.ico',
     },
-    {
-      from: './src/assets/fonts',
-      to:   './assets/fonts',
-    },
   ];
 
   return {
@@ -53,7 +49,7 @@ module.exports = (env, argv) => {
     plugins:   [
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        inject:   argv.mode !== 'production',
+        inject:   true,
         hash:     false,
         filename: 'index.html',
         template: 'src/index.html'
@@ -78,7 +74,7 @@ module.exports = (env, argv) => {
           loader:  'file-loader',
           options: {
             assetsPublicPath: '',
-            outputPath:       './assets/',
+            outputPath:       './assets/images/',
             name:             '[name].[ext]'
           }
         },

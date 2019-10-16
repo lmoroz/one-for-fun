@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+
 :root {
     --green-color: #81C242;
     --orange-color: #F7991D;
@@ -8,24 +9,20 @@
     --muted-text-color: #F8F9FB;
     --text-color: #FDFDFD;
 }
+
 :root {
     font-size: 125%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", "Roboto", sans-serif;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     color: var(--dark-color);
     background-color: var(--text-color);
-}
-header,
-footer,
-main {
-    max-width: 1024px;
-    min-width: 360px;
-    margin: 0 auto;
 }

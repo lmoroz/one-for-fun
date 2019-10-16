@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Larisa Morozhnikova Protfolio task for Rolling Scopes School</title>
   <link href="style.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -62,52 +63,54 @@
     <h2 class="portfolio-header">
       Portfolio
     </h2>
-    <ul class="projects-slider">
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/theyalow-slide-1.png" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/theyalow-slide-2.png" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/theyalow-slide-3.png" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/theyalow-slide-4.png" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-1.jpg" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-2.jpg" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-3.jpg" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-4.jpg" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-5.jpg" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-6.jpg" alt="">
-      </li>
-      <li class="projects-slider-item">
-        <div class="projects-slider__slider-description"></div>
-        <img src="assets/images/repair-design-project-slide-7.jpg" alt="">
-      </li>
-    </ul>
+    <section class="projects-slider-container">
+      <div class="glide">
+        <div class="projects-slider-track glide__track" data-glide-el="track">
+          <ul class="projects-slider slider__slides glide__slides">
+            <li class="projects-slider-item glide__slide">
+              <div class="projects-slider__slider-description">
+                <div class="project-description">
+                  <h3 class="project-description__project-name">TheYalow</h3>
+                  <ul class="project-description__project-props">
+                    <li>A Responsive Web Design Template</li>
+                    <li>Pixel perfect</li>
+                    <li>Smooth transitions</li>
+                    <li>Embedded video</li>
+                    <li>Twitter form</li>
+                    <li>Desktop and mobile version</li>
+                  </ul>
+                </div>
+                <img src="assets/images/theyalow-slide-1.png" alt="">
+              </div>
+            </li>
+            <li class="projects-slider-item glide__slide">
+              <div class="projects-slider__slider-description">
+                <div class="project-description">
+                  <h3 class="project-description__project-name">repair-design-project</h3>
+                  <ul class="project-description__project-props">
+                    <li>A Responsive Web Design Template</li>
+                    <li>Astonishing interactive instagram link</li>
+                    <li>Artsy lists and sliders</li>
+                    <li>Interactive «Scroll button»</li>
+                    <li>Cool fonts</li>
+                  </ul>
+                </div>
+                <img src="assets/images/repair-design-project-slide-1.jpg" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev" data-glide-dir="<">
+            «
+          </button>
+
+          <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir=">">
+            »
+          </button>
+        </div>
+      </div>
+    </section>
     <details open>
       <summary class="sertificates-header">
         <h2>Sertificates</h2>
@@ -119,8 +122,8 @@
           href="https://learn.javascript.ru/profile/larisa-morozhnikova" target="_blank">HTML DOM</a>», «<a
           href="https://learn.javascript.ru/courses/nodejs-20170314-2100/larisa-morozhnikova/en/certificate.jpg" target="_blank">Node.JS</a>» @https://learn.javascript.ru
         </li>
-        <li>2016 …</li>
-        <li>2015 …</li>
+        <li> …</li>
+        <li>2003 …</li>
       </ul>
     </details>
   </section>

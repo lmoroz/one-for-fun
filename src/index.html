@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Larisa Morozhnikova Protfolio task for Rolling Scopes School</title>
-  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
@@ -31,7 +31,7 @@
 </header>
 <main>
   <section class="main-info">
-    <details open>
+    <details>
       <summary class="education-header">
         <h2>Education</h2>
       </summary>
@@ -64,6 +64,8 @@
       Portfolio
     </h2>
     <section class="projects-slider-container">
+      <input type="checkbox" id="projects-slider__mobile-description-handler-check" class="projects-slider__mobile-description-handler-check">
+      <label for="projects-slider__mobile-description-handler-check" class="projects-slider__mobile-description-handler"></label>
       <div class="glide">
         <div class="projects-slider-track glide__track" data-glide-el="track">
           <ul class="projects-slider slider__slides glide__slides">
@@ -80,7 +82,7 @@
                     <li>Desktop and mobile version</li>
                   </ul>
                 </div>
-                <img src="assets/images/theyalow-slide-1.png" alt="">
+                <a href="../projects/theyalow/demo-default.html"><img src="assets/images/theyalow-slide-1.png" alt=""></a>
               </div>
             </li>
             <li class="projects-slider-item glide__slide">
@@ -95,7 +97,7 @@
                     <li>Cool fonts</li>
                   </ul>
                 </div>
-                <img src="assets/images/repair-design-project-slide-1.jpg" alt="">
+                <a href="../projects/repair-design-project/demo-default.html"><img src="assets/images/repair-design-project-slide-1.jpg" alt=""></a>
               </div>
             </li>
           </ul>

@@ -146,20 +146,14 @@ main {
     border-radius: 2px;
 }
 .projects-slider__mobile-description-handler-check {
-    display: none;
-}
-.projects-slider__mobile-description-handler-check:checked ~ .glide .project-description {
-    display: block;
-}
-.projects-slider__mobile-description-handler-check:checked ~ label::before {
-    content: 'Hide description';
+    display: none!important;
 }
 
 .projects-slider__slider-description {
     position: relative;
     width: 100%;
 }
-projects-slider__slider-description img {
+.projects-slider__slider-description img {
     width: 100%;
 }
 

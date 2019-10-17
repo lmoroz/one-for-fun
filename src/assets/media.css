@@ -69,7 +69,6 @@ main {
 }
 @media screen and (max-width: 768px) {
     .project-description {
-        display: none;
         width: 100%;
         padding: 2.5rem;
     }
@@ -86,6 +85,13 @@ main {
     .projects-slider__mobile-description-handler-check ~ .glide .project-description {
         display: none;
     }
+    .projects-slider__mobile-description-handler-check:checked ~ .glide .project-description {
+        display: block;
+    }
+    .projects-slider__mobile-description-handler-check:checked ~ label::before {
+        content: 'Hide description';
+    }
+    
     .projects-slider-container::before {
         content: 'swipe to see next';
         font-size: 1rem;

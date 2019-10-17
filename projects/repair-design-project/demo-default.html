@@ -37,8 +37,8 @@
   (() => {
     'use strict';
     const switcher = (e) => {
-      document.title = window.outerWidth + 'px';
-      if (window.outerWidth < 768) window.location.href = 'demo-mobile.html';
+      document.title = window.innerWidth + '/' + window.outerWidth + 'px';
+      if (window.outerWidth < 768 || window.innerWidth < 768) window.location.href = 'demo-mobile.html';
     };
     window.addEventListener('DOMContentLoaded', switcher);
     window.addEventListener('resize', switcher);

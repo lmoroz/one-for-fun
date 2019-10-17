@@ -35,6 +35,10 @@ module.exports = (env, argv) => {
       from: './src/favicon.ico',
       to:   './favicon.ico',
     },
+    {
+      from: './src/assets/demo.css',
+      to:   './assets/demo.css',
+    },
   ];
 
   return {

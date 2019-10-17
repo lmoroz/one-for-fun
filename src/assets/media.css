@@ -83,6 +83,9 @@ main {
     .glide__arrows {
         display: none;
     }
+    .projects-slider__mobile-description-handler-check ~ .glide .project-description {
+        display: none;
+    }
     .projects-slider-container::before {
         content: 'swipe to see next';
         font-size: 1rem;

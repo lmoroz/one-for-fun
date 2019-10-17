@@ -7,10 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>repair design project demo</title>
   <style>
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
     .iframe-container {
       padding-top: 65%;
       position: relative;
@@ -48,14 +44,16 @@
     }
 
     @media screen and (max-width: 1023px){
-      .button {
-        display: none;
+      .button-main {
+        display: none!important;
       }
     }
   </style>
+  <link rel="stylesheet" href="../../assets/demo.css" type="text/css">
 </head>
 <body class="iframe-container ">
 <iframe src="index.html" width="375" height="100%"></iframe>
-<a href="demo-default.html" class="button">Перейти на основную версию</a>
+<a href="demo-default.html" class="button button-main">To desktop version</a>
+<a href="../../index.html" class="button button-back">« Back</a>
 </body>
 </html>

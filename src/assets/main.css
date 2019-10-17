@@ -121,8 +121,9 @@ main {
     text-align: center;
 
     border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: none;
     color: var(--dark-color);
-    border-radius: 2px;
+    border-radius: 5px 5px 0 0;
 }
 .projects-slider__mobile-description-handler::before {
     content: 'Show description';
@@ -147,9 +148,6 @@ main {
 .projects-slider__mobile-description-handler-check {
     display: none;
 }
-.projects-slider__mobile-description-handler-check ~ .glide .project-description {
-    display: none;
-}
 .projects-slider__mobile-description-handler-check:checked ~ .glide .project-description {
     display: block;
 }
@@ -161,7 +159,9 @@ main {
     position: relative;
     width: 100%;
 }
-
+projects-slider__slider-description img {
+    width: 100%;
+}
 
 .project-description {
     position: absolute;

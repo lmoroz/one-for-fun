@@ -7,10 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TheYalow</title>
   <style>
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
     body {
       min-width: 1300px !important;
     }
@@ -30,33 +26,13 @@
       margin-left: 50%;
       transform: translateX(-50%);
     }
-
-    .button {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      color: #ffffff;
-      background-color: #ec9e03;
-      border: 2px solid #ec9e03;
-      border-radius: 5px;
-      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
-      font-weight: bold;
-      display: block;
-      padding: 1em;
-      text-decoration: none;
-      transition: all 0.1s ease;
-      will-change: background-color, color;
-    }
-
-    .button:hover {
-      color: #ec9e03;
-      background-color: #ffffff;
-    }
   </style>
+  <link rel="stylesheet" href="../../assets/demo.css" type="text/css">
 </head>
 <body class="iframe-container ">
 <iframe src="index.html" width="1440" height="100%"></iframe>
-<a href="demo-mobile.html" class="button">Перейти на мобильную версию</a>
+<a href="demo-mobile.html" class="button button-mobile">To mobile version</a>
+<a href="../../index.html" class="button button-back">« Back</a>
 <script>
   (() => {
     'use strict';

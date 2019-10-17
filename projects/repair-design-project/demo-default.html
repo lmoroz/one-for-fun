@@ -7,10 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>repair design project demo</title>
   <style>
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
     body {
       min-width: 1440px!important;
     }
@@ -30,37 +26,19 @@
       margin-left: 50%;
       transform: translateX(-50%);
     }
-    .button {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      color: #ffffff;
-      background-color: #e3b873;
-      border: 2px solid #e3b873;
-      border-radius: 5px;
-      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
-      font-weight: bold;
-      display: block;
-      padding: 1em;
-      text-decoration: none;
-      transition: all 0.1s ease;
-      will-change: background-color, color;
-    }
-    .button:hover {
-      color: #e3b873;
-      background-color: #ffffff;
-    }
   </style>
+  <link rel="stylesheet" href="../../assets/demo.css" type="text/css">
 </head>
 <body class="iframe-container ">
 <iframe src="index.html" width="1440" height="100%"></iframe>
-<a href="demo-mobile.html" class="button">Перейти на мобильную версию</a>
+<a href="demo-mobile.html" class="button button-mobile">To mobile version</a>
+<a href="../../index.html" class="button button-back">« Back</a>
 <script>
   (() => {
     'use strict';
     const switcher = (e) => {
       document.title = window.outerWidth + 'px';
-      if (window.outerWidth < 640) window.location.href = 'demo-mobile.html';
+      if (window.outerWidth < 768) window.location.href = 'demo-mobile.html';
     };
     window.addEventListener('DOMContentLoaded', switcher);
     window.addEventListener('resize', switcher);

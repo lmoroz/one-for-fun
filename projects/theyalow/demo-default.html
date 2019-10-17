@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="alternate" media="only screen and (max-width: 640px)"  href="demo-mobile.html">
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="demo-mobile.html">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TheYalow</title>
   <style>
-    body {
-      min-width: 1300px!important;
+    html, body {
+      width: 100%;
+      height: 100%;
     }
+    body {
+      min-width: 1300px !important;
+    }
+
     .iframe-container {
       padding-top: 65%;
       position: relative;
-      height:  1560px;
+      height: 1560px;
     }
 
     .iframe-container iframe {
@@ -25,6 +30,7 @@
       margin-left: 50%;
       transform: translateX(-50%);
     }
+
     .button {
       position: fixed;
       bottom: 2rem;
@@ -41,6 +47,7 @@
       transition: all 0.1s ease;
       will-change: background-color, color;
     }
+
     .button:hover {
       color: #ec9e03;
       background-color: #ffffff;
@@ -48,7 +55,18 @@
   </style>
 </head>
 <body class="iframe-container ">
-<iframe src="index.html" width="1440" height="100%" frameborder="no"></iframe>
+<iframe src="index.html" width="1440" height="100%"></iframe>
 <a href="demo-mobile.html" class="button">Перейти на мобильную версию</a>
+<script>
+  (() => {
+    'use strict';
+    const switcher = (e) => {
+      document.title = window.outerWidth + 'px';
+      if (window.outerWidth < 640) window.location.href = 'demo-mobile.html';
+    };
+    window.addEventListener('DOMContentLoaded', switcher);
+    window.addEventListener('resize', switcher);
+  })();
+</script>
 </body>
 </html>

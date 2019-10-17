@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TheYalow</title>
   <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
     .iframe-container {
       padding-top: 65%;
       position: relative;
@@ -41,6 +45,12 @@
     .button:hover {
       color: #ec9e03;
       background-color: #ffffff;
+    }
+
+    @media screen and (max-width: 767px){
+      .button {
+        display: none;
+      }
     }
   </style>
 </head>

@@ -31,10 +31,10 @@
 .icon-envelop:before {
   content: "\e945";
 }
-.icon-telegram:before {
+.icon-tg:before {
   content: "\ea95";
 }
-.icon-github:before {
+.icon-gh:before {
   content: "\eab0";
 }
 .icon-skype:before {

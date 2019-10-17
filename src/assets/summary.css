@@ -95,7 +95,7 @@ summary::after {
 [open] summary::after {
     transform: translateY(-50%) rotate(180deg);
 }
-summary::-webkit-details-marker{
+summary::-webkit-details-marker, summary::marker{
     display: none;
 }
 

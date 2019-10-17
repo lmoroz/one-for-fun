@@ -28,6 +28,10 @@ module.exports = (env, argv) => {
 
   const copyConfig = [
     {
+      from: './projects',
+      to:   './projects',
+    },
+    {
       from: './src/favicon.ico',
       to:   './favicon.ico',
     },

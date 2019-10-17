@@ -37,8 +37,9 @@
   (() => {
     'use strict';
     const switcher = (e) => {
-      document.title = window.innerWidth + '/' + window.outerWidth + 'px';
-      if (window.outerWidth < 640 || window.innerWidth < 640) window.location.href = 'demo-mobile.html';
+      document.title = [window.innerWidth, window.outerWidth, window.screen.availWidth].join('/') + 'px';
+      if (window.outerWidth < 640 || window.innerWidth < 640 || window.screen.availWidth < 640)
+        window.location.href = 'demo-mobile.html';
     };
     window.addEventListener('DOMContentLoaded', switcher);
     window.addEventListener('resize', switcher);

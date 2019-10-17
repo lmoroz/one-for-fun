@@ -125,11 +125,11 @@ main {
     color: var(--dark-color);
     border-radius: 5px 5px 0 0;
 }
-.projects-slider__mobile-description-handler::before {
+.projects-slider-container__mobile-description-handler::before {
     content: 'Show description';
     cursor: pointer;
 }
-.projects-slider__mobile-description-handler {
+.projects-slider-container__mobile-description-handler {
     cursor: pointer;
 
     display: none;
@@ -145,7 +145,7 @@ main {
 
     border-radius: 2px;
 }
-.projects-slider__mobile-description-handler-check {
+.projects-slider-container__mobile-description-handler-check {
     display: none!important;
 }
 

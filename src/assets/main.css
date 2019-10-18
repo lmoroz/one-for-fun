@@ -7,6 +7,7 @@ main {
     flex-direction: row-reverse;
     padding: 0;
     padding-top: 2em;
+    width: 1024px;
 }
 
 .main-info {
@@ -33,7 +34,8 @@ main {
 
 .portfolio-header,
 .education-header,
-.sertificates-header {
+.sertificates-header,
+footer {
     color: var(--text-color);
     font-size: 1rem;
     text-transform: uppercase;
@@ -51,9 +53,10 @@ main {
     animation: background 3s ease infinite;
 }
 
-.portfolio-header h2,
+.portfolio-header,
 .education-header h2,
-.sertificates-header h2 {
+.sertificates-header h2,
+footer {
     color: var(--text-color);
     font-size: 1rem;
 }
@@ -77,8 +80,13 @@ main {
     margin-bottom: 1.3rem;
 }
 .education-descr {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin-bottom: 0.3rem;
+}
+
+.education-descr a {
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 
@@ -196,6 +204,7 @@ main {
 }
 .sertificates-list > li {
     margin-bottom: 14px;
+    word-wrap: break-word;
 }
 
 
@@ -206,6 +215,7 @@ footer {
     padding: .5em;
     position: relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    width: 100%;
 }
 
 footer:before {

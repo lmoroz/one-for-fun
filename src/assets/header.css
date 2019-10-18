@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: center;
     padding: 24px;
-
+    font-size: 1rem;
+    width: 100%;
     position: relative;
 }
 .header-main>* {
@@ -61,14 +62,5 @@
     transform: scale(1.5);
 }
 
-@media (max-width: 480px) {
-    .header-name {
-        font-size: 24px;
-    }
-    .header-title {
-        font-size: 18px;
-    }
-    .header-summary {
-        font-size: 12px;
-    }
-}
+
+

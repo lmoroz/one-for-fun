@@ -64,7 +64,10 @@
     .project-description {
         width: 100%;
         padding: 2.5rem;
+        font-size: 0.8rem;
+        overflow-y: scroll;
     }
+
     .project-description__project-name {
         padding: 1.1rem;
     }
@@ -87,8 +90,8 @@
 
     .projects-slider-container::before {
         content: 'swipe to see next';
-        font-size: 1rem;
-        padding: 0.5rem;
+        font-size: 0.6rem;
+        padding: 0.2rem;
     }
     .projects-slider-container__mobile-description-handler{
         font-size: 1rem;
@@ -133,6 +136,24 @@
         width: 99vw;
     }
 
+    .project-description {
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        overflow-y: scroll;
+    }
+
+    .project-description__project-name {
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .project-description__project-props {
+        font-size: 0.7rem;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
     .education-date {
         font-size: 5vw;
         margin-bottom: 4.5vw;
@@ -148,6 +169,12 @@
 
 
 @media (max-width: 480px) {
+    .project-description {
+        padding: 1rem 0.1rem;
+    }
+    .project-description__project-props {
+        columns: 2;
+    }
     .header-name {
         font-size: 24px;
     }
